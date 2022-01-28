@@ -11,7 +11,7 @@ public class VeryNecessaryThing {
 
     @Override
     public String toString() {
-        return "VeryNecessaryThing{" + "Название: " + title + "Размер: " + size + "Цвет: " + color + "Цена: " + price + '}';
+        return "VeryNecessaryThing{" + "Title: " + title + "Size: " + size + "Color: " + color + "Price : " + price + '}';
     }
 
     public int getPrice() {

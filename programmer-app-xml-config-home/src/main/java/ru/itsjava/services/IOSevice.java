@@ -1,5 +1,5 @@
 package ru.itsjava.services;
 
-public interface IOSevvice {
+public interface IOSevice {
     int input();
 }

@@ -5,16 +5,16 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class BuyerServiceImpl implements BuyerService {
     private final VeryNecessaryThingService veryNecessaryThingService;
-    private final IOSevvice ioSevvice;
+    private final IOSevice ioSevice;
 
     @Override
     public void takeYourProduct() {
         System.out.println("Hello. We are glad to see you!");
         System.out.println("Here are our products");
-        veryNecessaryThingService.veryNecessaryThing();
+        veryNecessaryThingService.showingVeryNecessaryThing();
         System.out.println("Enter the exact amount of the product");
-        int price = ioSevvice.input();
+        int price = ioSevice.input();
         System.out.println("Here is your product");
-        veryNecessaryThingService.getVeryNecessaryThingService(price);
+        veryNecessaryThingService.choosingVeryNecessaryThingPrice(price);
     }
 }

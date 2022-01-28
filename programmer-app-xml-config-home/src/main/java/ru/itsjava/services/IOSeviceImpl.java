@@ -2,14 +2,12 @@ package ru.itsjava.services;
 
 import lombok.SneakyThrows;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class IOSevviceImpl implements IOSevvice {
+public class IOSeviceImpl implements IOSevice {
     private final Scanner reader;
 
-    public IOSevviceImpl() {
+    public IOSeviceImpl() {
         this.reader = new Scanner(System.in);
     }
 
