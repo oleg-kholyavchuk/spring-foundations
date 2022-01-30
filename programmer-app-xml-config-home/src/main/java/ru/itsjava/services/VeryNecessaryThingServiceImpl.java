@@ -23,7 +23,7 @@ public class VeryNecessaryThingServiceImpl implements VeryNecessaryThingService 
     @Override
     public void choosingVeryNecessaryThingPrice(int price) {
         List<VeryNecessaryThing> thingsTemp = List.of(thing1, thing2, thing3, thing4);
-        VeryNecessaryThing thingTemp = null;
+        VeryNecessaryThing thingTemp;
 
         for (VeryNecessaryThing thing : thingsTemp) {
             if (thing.getPrice() == price) {
