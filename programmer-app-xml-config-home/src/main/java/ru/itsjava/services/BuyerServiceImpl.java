@@ -15,6 +15,6 @@ public class BuyerServiceImpl implements BuyerService {
         System.out.println("Enter the exact amount of the product");
         int price = ioSevice.input();
         System.out.println("Here is your product");
-        veryNecessaryThingService.choosingVeryNecessaryThingPrice(price);
+        veryNecessaryThingService.byChoosingVeryNecessaryThingPrice(price);
     }
 }
