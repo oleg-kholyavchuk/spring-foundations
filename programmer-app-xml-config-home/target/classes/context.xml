@@ -4,11 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="notebookService" class="ru.itsjava.services.NotebookServiceImpl1"/>
-    <bean id="ioService" class="ru.itsjava.services.IOSevviceImpl1"/>
+    <bean id="veryNecessaryThingService" class="ru.itsjava.services.VeryNecessaryThingServiceImpl"/>
+    <bean id="ioService" class="ru.itsjava.services.IOSeviceImpl"/>
 
-    <bean id="programmerService" class="ru.itsjava.services.ProgrammerServiceImpl1">
-          <constructor-arg ref="notebookService"/>
+    <bean id="buyerService" class="ru.itsjava.services.BuyerServiceImpl">
+          <constructor-arg ref="veryNecessaryThingService"/>
           <constructor-arg ref="ioService"/>
     </bean>
 

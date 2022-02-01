@@ -8,7 +8,7 @@ https://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <!--    <bean id="farmer" class="ru.itsjava.KindFarmer">-->
 <!--        <constructor-arg ref="pig"/>-->
-<!--        &lt;!&ndash; <property name="animal" ref="pig"/>&ndash;&gt;-->
+        <!-- <property name="animal" ref="pig"/>-->
 <!--    </bean>-->
 
 
