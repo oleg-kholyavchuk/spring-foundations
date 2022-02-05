@@ -1,9 +1,9 @@
-package ru.itsjava.domain;
+package ru.itsjava.domai;
 
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-public class VeryNecessaryThingHome {
+public class Domain {
     private final String title;
     private final String size;
     private final String color;
