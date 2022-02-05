@@ -1,10 +1,7 @@
 package ru.itsjava.domain;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
-
 
 @RequiredArgsConstructor
 public class Notebook {
@@ -18,7 +15,6 @@ public class Notebook {
         return "VeryNecessaryThing{" + "Title: " + title + "Size: " + size + "Color: " + color + "Price : " + price + '}';
     }
 
-    @Autowired
     public int getPrice() {
         return this.price;
     }

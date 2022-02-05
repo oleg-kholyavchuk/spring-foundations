@@ -1,20 +1,22 @@
 package ru.itsjava.services;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
+@Service
 @RequiredArgsConstructor
-public class ProgrammerServiceImpl implements ProgrammerService{
-    private final NotebookService notebookService;
+public class BuyerServiceImpl implements BuyerService {
+    private final VeryNecessaryThingService veryNecessaryThingService;
     private final IOService ioService;
 
     @Override
     public void takeYourProduct() {
         System.out.println("Hello. We are glad to see you!");
         System.out.println("Here are our products");
-        notebookService.showingNotebook();
+        veryNecessaryThingService.showingVeryNecessaryThing();
         System.out.println("Enter the exact amount of the product");
         int price = ioService.input();
         System.out.println("Here is your product");
-        notebookService.byChoosingNotebookPrice(price);
+        veryNecessaryThingService.byChoosingVeryNecessaryThingPrice(price);
     }
 }

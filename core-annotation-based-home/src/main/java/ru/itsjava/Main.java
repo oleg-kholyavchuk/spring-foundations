@@ -1,18 +1,18 @@
 package ru.itsjava;
 
-import ru.itsjava.services.ProgrammerService;
+import ru.itsjava.services.BuyerService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan("ru.itsjava")
-public class Application {
+public class Main {
 
     public static void main(String[] args) {
         ApplicationContext context
-                = new AnnotationConfigApplicationContext(Application.class);
+                = new AnnotationConfigApplicationContext(Main.class);
 
-        ProgrammerService programmerService = context.getBean("programmerService", ProgrammerService.class);
-        programmerService.takeYourProduct();
+        BuyerService buyerService = context.getBean("buyerServiceImpl", BuyerService.class);
+        buyerService.takeYourProduct();
     }
 }

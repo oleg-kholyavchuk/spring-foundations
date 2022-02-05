@@ -1,5 +1,5 @@
 package ru.itsjava.services;
 
-public interface ProgrammerService {
+public interface BuyerService {
     void takeYourProduct();
 }
