@@ -3,21 +3,20 @@ package ru.itsjava;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-import ru.itsjava.services.BuyerServiceHome;
+import ru.itsjava.services.BuyerService;
 
-@Configuration
+
 @ComponentScan("ru.itsjava.configuration")
-@PropertySource("classpath:appHome.properties")
-public class MainHome {
+@PropertySource("classpath:app.properties")
+public class Main {
 
     public static void main(String[] args) {
 
         ApplicationContext context
-                = new AnnotationConfigApplicationContext(MainHome.class);
-        BuyerServiceHome buyerServiceHome = context.getBean("buyerServiceHome", BuyerServiceHome.class);
+                = new AnnotationConfigApplicationContext(Main.class);
+        BuyerService buyerService = context.getBean("buyerService", BuyerService.class);
 
-        buyerServiceHome.takeYourProduct();
+        buyerService.takeYourProduct();
     }
 }

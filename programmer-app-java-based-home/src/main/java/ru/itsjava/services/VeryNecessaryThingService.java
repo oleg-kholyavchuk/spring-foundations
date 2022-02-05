@@ -1,7 +1,7 @@
 package ru.itsjava.services;
 
 
-public interface VeryNecessaryThingServiceHome {
+public interface VeryNecessaryThingService {
 
     void showingVeryNecessaryThing();
 

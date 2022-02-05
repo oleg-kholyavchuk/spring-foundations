@@ -3,9 +3,9 @@ package ru.itsjava.services;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-public class BuyerServiceHomeImpl implements BuyerServiceHome {
-    private final VeryNecessaryThingServiceHome veryNecessaryThingService;
-    private final IOSeviceHome ioSevice;
+public class BuyerServiceImpl implements BuyerService {
+    private final VeryNecessaryThingService veryNecessaryThingService;
+    private final IOService ioService;
 
     @Override
     public void takeYourProduct() {
@@ -13,7 +13,7 @@ public class BuyerServiceHomeImpl implements BuyerServiceHome {
         System.out.println("Here are our products");
         veryNecessaryThingService.showingVeryNecessaryThing();
         System.out.println("Enter the exact amount of the product");
-        int price = ioSevice.input();
+        int price = ioService.input();
         System.out.println("Here is your product");
         veryNecessaryThingService.byChoosingVeryNecessaryThingPrice(price);
     }

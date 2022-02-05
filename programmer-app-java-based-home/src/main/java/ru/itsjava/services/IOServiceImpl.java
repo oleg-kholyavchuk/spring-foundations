@@ -2,13 +2,14 @@ package ru.itsjava.services;
 
 import lombok.SneakyThrows;
 
+import java.io.InputStream;
 import java.util.Scanner;
 
-public class IOSeviceHomeImpl implements IOSeviceHome {
+public class IOServiceImpl implements IOService {
     private final Scanner reader;
 
-    public IOSeviceHomeImpl(Scanner scanner) {
-        this.reader = new Scanner(System.in);
+    public IOServiceImpl(InputStream inputStream) {
+        this.reader = new Scanner(inputStream);
     }
 
     @SneakyThrows
